@@ -43,9 +43,13 @@ RUN conda install -y -q --name neuro bokeh \
                                      vtk \
     && sync && conda clean -tipsy && sync \
     && bash -c "source activate neuro \
-    && pip install  --no-cache-dir nitime \
+    && pip install  --no-cache-dir atlasreader \
+                                   fury \
+                                   nitime \
                                    nibabel \
-                                   nilearn==0.5.0a \
+                                   nilearn==0.5.2 \
+                                   nistats \
+                                   git+https://github.com/bids-standard/pybids.git \
                                    pymvpa2 \
                                    tensorflow \
                                    keras \
@@ -63,7 +67,8 @@ RUN bash -c 'source activate neuro \
              && cd /data/ds000114 \
              && datalad get -J 4 /data/ds000114/sub-0[234789]/ses-test/anat/sub-0[234789]_ses-test_T1w.nii.gz \
                                  /data/ds000114/sub-0[234789]/ses-test/func/*fingerfootlips* \
-                                 /data/ds000114/derivatives/freesurfer/sub-01'
+                                 /data/ds000114/derivatives/freesurfer/sub-01 \
+                                 /data/ds000114/derivatives/fmriprep/sub-01/ses-test/func/*fingerfootlips*'
 
 #------------------------------------------------
 # Copy workshop notebooks into image and clean up
@@ -79,6 +84,11 @@ COPY ["program.ipynb", "/home/neuro/workshop/program.ipynb"]
 
 COPY ["test_notebooks.py", "/home/neuro/workshop/test_notebooks.py"]
 
+RUN curl -J -L -o /data/ds000228.zip https://www.dropbox.com/s/ue1wuoaryvp6iw1/ds000228.zip?dl=0 \
+    && mkdir /data/ds000228 \
+    && unzip /data/ds000228.zip -d /data/ds000228/ -x / \
+    && rm /data/ds000228.zip
+
 RUN curl -J -L -o /data/adhd_data.zip https://www.dropbox.com/sh/wl0auzjfnp2jia3/AAChCae4sCHzB8GJ02VHGOYQa?dl=1 \
     && mkdir /data/adhd \
     && unzip /data/adhd_data.zip -d /data/adhd/ -x / \
@@ -92,7 +102,7 @@ RUN rm -rf /opt/conda/pkgs/*
 
 USER neuro
 
-RUN mkdir -p ~/.jupyter && echo c.NotebookApp.ip = \"0.0.0.0\" > ~/.jupyter/jupyter_notebook_config.py
+#RUN mkdir -p ~/.jupyter && echo c.NotebookApp.ip = \"0.0.0.0\" > ~/.jupyter/jupyter_notebook_config.py
 
 WORKDIR /home/neuro
 
