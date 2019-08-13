@@ -47,7 +47,7 @@ RUN conda install -y -q --name neuro bokeh \
                                    fury \
                                    nitime \
                                    nibabel \
-                                   nilearn==0.5.2 \
+                                   nilearn \
                                    nistats \
                                    git+https://github.com/bids-standard/pybids.git \
                                    pymvpa2 \
