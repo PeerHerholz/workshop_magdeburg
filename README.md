@@ -1,4 +1,4 @@
-# Workshops Cambridge - 2018
+# Workshops Magdeburg - 2018
 
 [![GitHub issues](https://img.shields.io/github/issues/peerherholz/workshop_magdeburg.svg)](https://github.com/peerherholz/workshop_magdeburg/issues/)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/peerherholz/workshop_magdeburg.svg)](https://github.com/peerherholz/workshop_magdeburg/pulls/)
