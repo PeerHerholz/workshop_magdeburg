@@ -1,4 +1,4 @@
-# Workshops Magdeburg - 2018
+# Workshops Magdeburg - 2019
 
 [![GitHub issues](https://img.shields.io/github/issues/peerherholz/workshop_magdeburg.svg)](https://github.com/peerherholz/workshop_magdeburg/issues/)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/peerherholz/workshop_magdeburg.svg)](https://github.com/peerherholz/workshop_magdeburg/pulls/)
@@ -8,7 +8,7 @@
 [![Docker Hub](https://img.shields.io/docker/pulls/peerherholz/workshop_magdeburg.svg?maxAge=2592000)](https://hub.docker.com/r/peerherholz/workshop_magdeburg/)
 [![GitHub HitCount](http://hits.dwyl.io/peerherholz/workshop_magdeburg.svg)](http://hits.dwyl.io/peerherholz/workshop_magdeburg)
 
-This repository contains everything for the workshop in Cambridge 2018. There are three ways that you can interact with its content:
+This repository contains everything for the workshop in Magdeburg 2019. There are three ways that you can interact with its content:
 
 ## 1. Docker (recommended)
 
