@@ -108,7 +108,7 @@ RUN rm -rf /opt/conda/pkgs/*
 
 USER neuro
 
-#RUN mkdir -p ~/.jupyter && echo c.NotebookApp.ip = \"0.0.0.0\" > ~/.jupyter/jupyter_notebook_config.py
+RUN mkdir -p ~/.jupyter && echo c.NotebookApp.ip = \"0.0.0.0\" > ~/.jupyter/jupyter_notebook_config.py
 
 WORKDIR /home/neuro
 
