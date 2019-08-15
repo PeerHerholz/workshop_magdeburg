@@ -49,8 +49,12 @@ RUN conda install -y -q --name neuro bokeh \
                                    nibabel \
                                    nilearn \
                                    nistats \
+                                   pingouin==0.2.4 \
+                                   matplotlib==3.0.3 \
+                                   nose \
                                    git+https://github.com/bids-standard/pybids.git \
                                    pymvpa2 \
+                                   scipy==1.2 \
                                    tensorflow \
                                    keras \
                                    vtk" \
@@ -88,6 +92,8 @@ RUN curl -J -L -o /data/ds000228.zip https://www.dropbox.com/s/ue1wuoaryvp6iw1/d
     && mkdir /data/ds000228 \
     && unzip /data/ds000228.zip -d /data/ds000228/ -x / \
     && rm /data/ds000228.zip
+
+RUN chown -R neuro /data/ds000228
 
 RUN curl -J -L -o /data/adhd_data.zip https://www.dropbox.com/sh/wl0auzjfnp2jia3/AAChCae4sCHzB8GJ02VHGOYQa?dl=1 \
     && mkdir /data/adhd \
