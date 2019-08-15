@@ -75,4 +75,4 @@ If you don't care about some of the software dependencies, or have them already 
 
 ## 3. Jupyter NBViewer
 
-All the notebooks (but not the slides) can be looked at via [Jupyter nbviewer](https://nbviewer.jupyter.org/github/peerherholz/workshop_magdeburg/blob/master/program.ipynb). Like this you can see everything but cannot really interact with the scripts or run the code.
+All the notebooks (but not the slides) can be looked at via [Jupyter nbviewer](https://nbviewer.jupyter.org/github/PeerHerholz/workshop_magdeburg/blob/master/program.ipynb). Like this you can see everything but cannot really interact with the scripts or run the code.
