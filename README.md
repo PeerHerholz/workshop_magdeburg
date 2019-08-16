@@ -5,8 +5,8 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/peerherholz/workshop_magdeburg.svg)](https://GitHub.com/peerherholz/workshop_magdeburg/graphs/contributors/)
 [![GitHub Commits](https://github-basic-badges.herokuapp.com/commits/peerherholz/workshop_magdeburg.svg)](https://github.com/peerherholz/workshop_magdeburg/commits/master)
 [![GitHub size](https://github-size-badge.herokuapp.com/peerherholz/workshop_magdeburg.svg)](https://github.com/peerherholz/workshop_magdeburg/archive/master.zip)
-[![Docker Hub](https://img.shields.io/docker/pulls/peerherholz/workshop_magdeburg.svg?maxAge=2592000)](https://hub.docker.com/r/peerherholz/workshop_magdeburg/)
 [![GitHub HitCount](http://hits.dwyl.io/peerherholz/workshop_magdeburg.svg)](http://hits.dwyl.io/peerherholz/workshop_magdeburg)
+[![Docker Hub](https://img.shields.io/docker/pulls/peerherholz/workshop_magdeburg.svg?maxAge=2592000)](https://hub.docker.com/r/peerherholz/workshop_magdeburg/)
 
 This repository contains everything for the workshop in Magdeburg 2019. There are three ways that you can interact with its content:
 
